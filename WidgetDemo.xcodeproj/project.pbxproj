@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A029C03F1DB75F070040A674 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A029C03E1DB75F070040A674 /* NotificationCenter.framework */; };
+		A029C0431DB75F070040A674 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A029C0421DB75F070040A674 /* TodayViewController.m */; };
+		A029C0461DB75F070040A674 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A029C0441DB75F070040A674 /* MainInterface.storyboard */; };
+		A029C04A1DB75F070040A674 /* MyWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A029C03C1DB75F070040A674 /* MyWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A063A4391DB7598700E852B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A063A4381DB7598700E852B0 /* main.m */; };
 		A063A43C1DB7598700E852B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A063A43B1DB7598700E852B0 /* AppDelegate.m */; };
 		A063A43F1DB7598700E852B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A063A43E1DB7598700E852B0 /* ViewController.m */; };
@@ -15,9 +19,22 @@
 		A063A4471DB7598700E852B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A063A4451DB7598700E852B0 /* LaunchScreen.storyboard */; };
 		A063A4521DB7598700E852B0 /* WidgetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A063A4511DB7598700E852B0 /* WidgetDemoTests.m */; };
 		A063A45D1DB7598700E852B0 /* WidgetDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A063A45C1DB7598700E852B0 /* WidgetDemoUITests.m */; };
+		A063A46C1DB75D6200E852B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A063A43E1DB7598700E852B0 /* ViewController.m */; };
+		A063A46D1DB75D6200E852B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A063A43B1DB7598700E852B0 /* AppDelegate.m */; };
+		A063A46E1DB75D6200E852B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A063A4381DB7598700E852B0 /* main.m */; };
+		A063A4711DB75D6200E852B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A063A4451DB7598700E852B0 /* LaunchScreen.storyboard */; };
+		A063A4721DB75D6200E852B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A063A4431DB7598700E852B0 /* Assets.xcassets */; };
+		A063A4731DB75D6200E852B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A063A4401DB7598700E852B0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A029C0481DB75F070040A674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A063A42C1DB7598700E852B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A029C03B1DB75F070040A674;
+			remoteInfo = MyWidget;
+		};
 		A063A44E1DB7598700E852B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A063A42C1DB7598700E852B0 /* Project object */;
@@ -34,7 +51,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A029C04E1DB75F070040A674 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A029C04A1DB75F070040A674 /* MyWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A029C03C1DB75F070040A674 /* MyWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A029C03E1DB75F070040A674 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A029C0411DB75F070040A674 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		A029C0421DB75F070040A674 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		A029C0451DB75F070040A674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A029C0471DB75F070040A674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A063A4341DB7598700E852B0 /* WidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A063A4381DB7598700E852B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A063A43A1DB7598700E852B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,9 +88,21 @@
 		A063A4581DB7598700E852B0 /* WidgetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A063A45C1DB7598700E852B0 /* WidgetDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetDemoUITests.m; sourceTree = "<group>"; };
 		A063A45E1DB7598700E852B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A063A4771DB75D6200E852B0 /* WidgetDemo copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WidgetDemo copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A063A4781DB75D6200E852B0 /* WidgetDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WidgetDemo copy-Info.plist"; path = "/Users/Light/Documents/My_Codes/Xcode/WidgetDemo/WidgetDemo copy-Info.plist"; sourceTree = "<absolute>"; };
+		A0DB24051DB77ABB003CCB52 /* MyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyWidget.entitlements; sourceTree = "<group>"; };
+		A0DB24061DB77AFC003CCB52 /* WidgetDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A029C0391DB75F070040A674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A029C03F1DB75F070040A674 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A063A4311DB7598700E852B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,16 +124,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A063A46F1DB75D6200E852B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A029C03D1DB75F070040A674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A029C03E1DB75F070040A674 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A029C0401DB75F070040A674 /* MyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A0DB24051DB77ABB003CCB52 /* MyWidget.entitlements */,
+				A029C0411DB75F070040A674 /* TodayViewController.h */,
+				A029C0421DB75F070040A674 /* TodayViewController.m */,
+				A029C0441DB75F070040A674 /* MainInterface.storyboard */,
+				A029C0471DB75F070040A674 /* Info.plist */,
+			);
+			path = MyWidget;
+			sourceTree = "<group>";
+		};
 		A063A42B1DB7598700E852B0 = {
 			isa = PBXGroup;
 			children = (
 				A063A4361DB7598700E852B0 /* WidgetDemo */,
 				A063A4501DB7598700E852B0 /* WidgetDemoTests */,
 				A063A45B1DB7598700E852B0 /* WidgetDemoUITests */,
+				A029C0401DB75F070040A674 /* MyWidget */,
+				A029C03D1DB75F070040A674 /* Frameworks */,
 				A063A4351DB7598700E852B0 /* Products */,
+				A063A4781DB75D6200E852B0 /* WidgetDemo copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +173,8 @@
 				A063A4341DB7598700E852B0 /* WidgetDemo.app */,
 				A063A44D1DB7598700E852B0 /* WidgetDemoTests.xctest */,
 				A063A4581DB7598700E852B0 /* WidgetDemoUITests.xctest */,
+				A063A4771DB75D6200E852B0 /* WidgetDemo copy.app */,
+				A029C03C1DB75F070040A674 /* MyWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +182,7 @@
 		A063A4361DB7598700E852B0 /* WidgetDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A0DB24061DB77AFC003CCB52 /* WidgetDemo.entitlements */,
 				A063A43A1DB7598700E852B0 /* AppDelegate.h */,
 				A063A43B1DB7598700E852B0 /* AppDelegate.m */,
 				A063A43D1DB7598700E852B0 /* ViewController.h */,
@@ -143,6 +225,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A029C03B1DB75F070040A674 /* MyWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A029C04D1DB75F070040A674 /* Build configuration list for PBXNativeTarget "MyWidget" */;
+			buildPhases = (
+				A029C0381DB75F070040A674 /* Sources */,
+				A029C0391DB75F070040A674 /* Frameworks */,
+				A029C03A1DB75F070040A674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWidget;
+			productName = MyWidget;
+			productReference = A029C03C1DB75F070040A674 /* MyWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A063A4331DB7598700E852B0 /* WidgetDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A063A4611DB7598700E852B0 /* Build configuration list for PBXNativeTarget "WidgetDemo" */;
@@ -150,10 +249,12 @@
 				A063A4301DB7598700E852B0 /* Sources */,
 				A063A4311DB7598700E852B0 /* Frameworks */,
 				A063A4321DB7598700E852B0 /* Resources */,
+				A029C04E1DB75F070040A674 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A029C0491DB75F070040A674 /* PBXTargetDependency */,
 			);
 			name = WidgetDemo;
 			productName = WidgetDemo;
@@ -196,6 +297,23 @@
 			productReference = A063A4581DB7598700E852B0 /* WidgetDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A063A46A1DB75D6200E852B0 /* WidgetDemo copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A063A4741DB75D6200E852B0 /* Build configuration list for PBXNativeTarget "WidgetDemo copy" */;
+			buildPhases = (
+				A063A46B1DB75D6200E852B0 /* Sources */,
+				A063A46F1DB75D6200E852B0 /* Frameworks */,
+				A063A4701DB75D6200E852B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WidgetDemo copy";
+			productName = WidgetDemo;
+			productReference = A063A4771DB75D6200E852B0 /* WidgetDemo copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,9 +323,25 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Light;
 				TargetAttributes = {
+					A029C03B1DB75F070040A674 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P7D2R2T64D;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					A063A4331DB7598700E852B0 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P7D2R2T64D;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A063A44C1DB7598700E852B0 = {
 						CreatedOnToolsVersion = 8.0;
@@ -237,11 +371,21 @@
 				A063A4331DB7598700E852B0 /* WidgetDemo */,
 				A063A44C1DB7598700E852B0 /* WidgetDemoTests */,
 				A063A4571DB7598700E852B0 /* WidgetDemoUITests */,
+				A063A46A1DB75D6200E852B0 /* WidgetDemo copy */,
+				A029C03B1DB75F070040A674 /* MyWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A029C03A1DB75F070040A674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A029C0461DB75F070040A674 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A063A4321DB7598700E852B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,9 +410,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A063A4701DB75D6200E852B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A063A4711DB75D6200E852B0 /* LaunchScreen.storyboard in Resources */,
+				A063A4721DB75D6200E852B0 /* Assets.xcassets in Resources */,
+				A063A4731DB75D6200E852B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A029C0381DB75F070040A674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A029C0431DB75F070040A674 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A063A4301DB7598700E852B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,9 +457,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A063A46B1DB75D6200E852B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A063A46C1DB75D6200E852B0 /* ViewController.m in Sources */,
+				A063A46D1DB75D6200E852B0 /* AppDelegate.m in Sources */,
+				A063A46E1DB75D6200E852B0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A029C0491DB75F070040A674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A029C03B1DB75F070040A674 /* MyWidget */;
+			targetProxy = A029C0481DB75F070040A674 /* PBXContainerItemProxy */;
+		};
 		A063A44F1DB7598700E852B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A063A4331DB7598700E852B0 /* WidgetDemo */;
@@ -311,6 +488,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A029C0441DB75F070040A674 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A029C0451DB75F070040A674 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		A063A4401DB7598700E852B0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -330,6 +515,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A029C04B1DB75F070040A674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyWidget/MyWidget.entitlements;
+				DEVELOPMENT_TEAM = P7D2R2T64D;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobvoi.WidgetDemo.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A029C04C1DB75F070040A674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyWidget/MyWidget.entitlements;
+				DEVELOPMENT_TEAM = P7D2R2T64D;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobvoi.WidgetDemo.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		A063A45F1DB7598700E852B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,6 +633,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WidgetDemo/WidgetDemo.entitlements;
+				DEVELOPMENT_TEAM = P7D2R2T64D;
 				INFOPLIST_FILE = WidgetDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobvoi.WidgetDemo;
@@ -433,6 +646,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WidgetDemo/WidgetDemo.entitlements;
+				DEVELOPMENT_TEAM = P7D2R2T64D;
 				INFOPLIST_FILE = WidgetDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobvoi.WidgetDemo;
@@ -486,9 +701,40 @@
 			};
 			name = Release;
 		};
+		A063A4751DB75D6200E852B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "WidgetDemo copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobvoi.WidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A063A4761DB75D6200E852B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "WidgetDemo copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobvoi.WidgetDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A029C04D1DB75F070040A674 /* Build configuration list for PBXNativeTarget "MyWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A029C04B1DB75F070040A674 /* Debug */,
+				A029C04C1DB75F070040A674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A063A42F1DB7598700E852B0 /* Build configuration list for PBXProject "WidgetDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -505,6 +751,7 @@
 				A063A4631DB7598700E852B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A063A4641DB7598700E852B0 /* Build configuration list for PBXNativeTarget "WidgetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +760,7 @@
 				A063A4661DB7598700E852B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A063A4671DB7598700E852B0 /* Build configuration list for PBXNativeTarget "WidgetDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +769,16 @@
 				A063A4691DB7598700E852B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A063A4741DB75D6200E852B0 /* Build configuration list for PBXNativeTarget "WidgetDemo copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A063A4751DB75D6200E852B0 /* Debug */,
+				A063A4761DB75D6200E852B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
